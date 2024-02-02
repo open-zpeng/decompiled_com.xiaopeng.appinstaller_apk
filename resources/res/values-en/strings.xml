@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="x_capital_off">close</string>
+    <string name="x_capital_on">open</string>
+    <string name="x_loading_dialog_message">loading...</string>
+</resources>

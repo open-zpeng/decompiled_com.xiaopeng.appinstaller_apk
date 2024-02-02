@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="@dimen/x_dialog_width" android:layout_height="@dimen/x_dialog_min_height">
+    <com.xiaopeng.xui.widget.XLoading android:layout_gravity="center" android:id="@+id/loading" android:layout_height="match_parent" android:layout_weight="1" style="@style/XLoading.Medium"/>
+    <com.xiaopeng.xui.widget.XTextView android:textSize="@dimen/x_font_title_01_size" android:textColor="@color/x_theme_text_01" android:gravity="top|center_horizontal" android:id="@+id/dialog_title" android:paddingLeft="@dimen/x_dialog_title_padding" android:paddingRight="@dimen/x_dialog_title_padding" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/x_dialog_title_margin_top" android:singleLine="true" android:includeFontPadding="false" app:vuiMode="DISABLED"/>
+    <com.xiaopeng.xui.widget.XTextView android:textSize="@dimen/x_font_title_04_size" android:textColor="@color/x_theme_text_02" android:gravity="center_vertical" android:id="@+id/dialog_message" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1" android:layout_marginStart="30dp" android:layout_marginEnd="30dp" app:vuiMode="DISABLED"/>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/x_dialog_has_buttons" android:layout_width="match_parent" android:layout_height="@dimen/x_dialog_button_height">
+        <com.xiaopeng.xui.widget.XButton android:id="@+id/dialog_button1" android:text="@string/cancel" app:vuiDisableHitEffect="true" app:vuiEnableViewVuiMode="true" style="@style/XButton.Dialog.Positive"/>
+        <com.xiaopeng.xui.widget.XButton android:id="@+id/dialog_button2" android:visibility="gone" app:vuiDisableHitEffect="true" app:vuiEnableViewVuiMode="true" style="@style/XButton.Dialog.Negative"/>
+    </LinearLayout>
+</LinearLayout>

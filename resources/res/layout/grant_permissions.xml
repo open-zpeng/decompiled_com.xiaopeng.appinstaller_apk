@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/permission_root_view" android:layout_width="@dimen/x_dialog_width" android:layout_height="wrap_content">
+    <com.xiaopeng.xui.widget.XTextView android:textSize="@dimen/x_font_title_01_size" android:textColor="@color/x_theme_text_01" android:gravity="center" android:id="@+id/current_page_text" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/x_dialog_title_margin_top" android:maxLines="1"/>
+    <FrameLayout android:id="@+id/desc_container" android:layout_width="match_parent" android:layout_height="0dp" android:layout_marginTop="@dimen/car_padding_4" android:layout_marginBottom="@dimen/car_padding_2" android:layout_weight="1" android:layout_marginStart="@dimen/car_keyline_1" android:layout_marginEnd="@dimen/car_keyline_1">
+        <include layout="@layout/permission_description"/>
+    </FrameLayout>
+    <com.xiaopeng.xui.widget.XCheckBox android:textSize="@dimen/x_font_body_01_size" android:textColor="@color/x_theme_text_01" android:gravity="center_vertical" android:id="@+id/do_not_ask_checkbox" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/never_ask_again" android:layout_marginStart="@dimen/car_keyline_1" android:layout_marginEnd="@dimen/car_keyline_1"/>
+    <LinearLayout android:layout_gravity="bottom" android:orientation="horizontal" android:id="@+id/button_group" android:layout_width="match_parent" android:layout_height="@dimen/x_dialog_button_height" android:layoutDirection="locale">
+        <com.xiaopeng.xui.widget.XButton android:id="@+id/permission_allow_button" android:text="@string/grant_dialog_button_allow" style="@style/XButton.Dialog.Positive"/>
+        <com.xiaopeng.xui.widget.XButton android:id="@+id/permission_deny_button" android:text="@string/grant_dialog_button_deny" style="@style/XButton.Dialog.Negative"/>
+    </LinearLayout>
+</LinearLayout>

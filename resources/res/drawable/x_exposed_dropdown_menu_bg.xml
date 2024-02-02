@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true">
+        <layer-list>
+            <item android:height="@dimen/x_exposed_dropdown_menu_height" android:width="@dimen/x_exposed_dropdown_menu_width">
+                <inset android:insetLeft="@dimen/x_exposed_dropdown_menu_inset_horizontal" android:insetRight="@dimen/x_exposed_dropdown_menu_inset_horizontal" android:insetTop="@dimen/x_exposed_dropdown_menu_inset_vertical" android:insetBottom="@dimen/x_exposed_dropdown_menu_inset_vertical">
+                    <shape>
+                        <solid android:color="@color/x_theme_primary_neutral_pressed"/>
+                        <corners android:radius="36dp"/>
+                    </shape>
+                </inset>
+            </item>
+        </layer-list>
+    </item>
+    <item android:state_enabled="false">
+        <layer-list>
+            <item android:height="@dimen/x_exposed_dropdown_menu_height" android:width="@dimen/x_exposed_dropdown_menu_width">
+                <inset android:insetLeft="@dimen/x_exposed_dropdown_menu_inset_horizontal" android:insetRight="@dimen/x_exposed_dropdown_menu_inset_horizontal" android:insetTop="@dimen/x_exposed_dropdown_menu_inset_vertical" android:insetBottom="@dimen/x_exposed_dropdown_menu_inset_vertical">
+                    <shape>
+                        <solid android:color="@color/x_theme_primary_neutral_disable"/>
+                        <corners android:radius="36dp"/>
+                    </shape>
+                </inset>
+            </item>
+        </layer-list>
+    </item>
+    <item>
+        <layer-list>
+            <item android:height="@dimen/x_exposed_dropdown_menu_height" android:width="@dimen/x_exposed_dropdown_menu_width">
+                <inset android:insetLeft="@dimen/x_exposed_dropdown_menu_inset_horizontal" android:insetRight="@dimen/x_exposed_dropdown_menu_inset_horizontal" android:insetTop="@dimen/x_exposed_dropdown_menu_inset_vertical" android:insetBottom="@dimen/x_exposed_dropdown_menu_inset_vertical">
+                    <shape>
+                        <solid android:color="@color/x_theme_primary_neutral_normal"/>
+                        <corners android:radius="36dp"/>
+                    </shape>
+                </inset>
+            </item>
+        </layer-list>
+    </item>
+</selector>
